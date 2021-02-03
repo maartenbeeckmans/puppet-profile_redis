@@ -1,0 +1,7 @@
+---
+profile_redis::bind: "%{facts.networking.ip}"
+profile_redis::listening_ports:
+  - 6379
+profile_redis::manage_firewall_entry: true
+profile_redis::manage_prometheus_exporter: false
+...
